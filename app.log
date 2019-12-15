@@ -1,0 +1,171 @@
+2019-12-16 07:57:39,666 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 16780 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 07:57:39,669 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 07:57:39,670 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 07:57:41,276 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 07:57:41,279 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 07:57:41,411 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 07:57:41,603 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 07:57:41,665 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 07:57:41,771 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 07:57:41,848 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 07:57:42,125 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 07:57:42,142 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 07:57:42,713 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 07:57:43,738 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.452 seconds (JVM running for 4.903)
+2019-12-16 07:58:20,566 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 07:58:20,618 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-3] Post payload is { branchNumber='null', costCentre='null', fibreProjectManager='null', projectBudget='null', projectCode='null', projectType='null', requestor='null', state='null'}
+2019-12-16 07:58:20,619 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-3] After processinng , new br is 
+2019-12-16 08:02:00,895 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] Post payload is { branchNumber='null', costCentre='null', fibreProjectManager='null', projectBudget='null', projectCode='null', projectType='null', requestor='null', state='null'}
+2019-12-16 08:02:00,896 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] After processinng , new br is 
+2019-12-16 08:04:13,337 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:04:13,346 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:04:20,650 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 5412 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:04:20,652 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:04:20,653 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:04:22,138 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:04:22,141 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:04:22,250 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:04:22,423 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:04:22,479 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:04:22,580 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:04:22,659 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:04:22,922 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:04:22,939 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:04:23,441 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:04:24,428 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.129 seconds (JVM running for 4.498)
+2019-12-16 08:04:31,596 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:05:57,327 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-4] Post payload is { branchNumber='null', costCentre='null', fibreProjectManager='null', projectBudget='null', projectCode='null', projectType='null', requestor='null', state='null'}
+2019-12-16 08:05:57,330 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-4] After processinng , new br is 
+2019-12-16 08:06:18,113 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:06:18,127 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:06:25,522 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 10928 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:06:25,526 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:06:25,527 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:06:27,087 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:06:27,089 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:06:27,217 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:06:27,404 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:06:27,469 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:06:27,571 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:06:27,658 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:06:27,940 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:06:27,958 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:06:28,526 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:06:29,475 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.344 seconds (JVM running for 4.833)
+2019-12-16 08:06:34,596 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:06:34,845 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-3] Post payload is { branchNumber='null', costCentre='null', fibreProjectManager='null', projectBudget='null', projectCode='null', projectType='null', requestor='null', state='null'}
+2019-12-16 08:06:34,847 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-3] After processinng , new br is 
+2019-12-16 08:20:13,271 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:20:13,282 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:20:20,746 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 16312 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:20:20,749 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:20:20,750 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:20:22,256 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:20:22,259 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:20:22,373 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:20:22,559 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:20:22,618 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:20:22,718 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:20:22,798 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:20:23,046 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:20:23,063 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:20:23,581 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:20:24,633 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.288 seconds (JVM running for 4.737)
+2019-12-16 08:20:44,702 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:20:44,947 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-4] Post payload is { branchNumber='null', costCentre='null', fibreProjectManager='null', projectBudget='null', projectCode='null', projectType='null', requestor='null', state='null'}
+2019-12-16 08:20:44,949 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-4] After processinng , new br is 
+2019-12-16 08:21:20,855 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:21:20,868 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:21:28,095 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 1952 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:21:28,098 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:21:28,098 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:21:29,583 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:21:29,585 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:21:29,697 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:21:29,870 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:21:29,929 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:21:30,032 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:21:30,113 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:21:30,382 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:21:30,398 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:21:30,946 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:21:31,943 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.191 seconds (JVM running for 4.561)
+2019-12-16 08:22:05,276 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:22:23,800 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:22:23,823 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:22:37,225 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 20024 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:22:37,227 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:22:37,228 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:22:38,671 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:22:38,674 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:22:38,788 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:22:38,960 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:22:39,018 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:22:39,114 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:22:39,193 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:22:39,438 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:22:39,455 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:22:39,960 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:22:40,901 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.019 seconds (JVM running for 4.426)
+2019-12-16 08:22:47,648 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:39:05,364 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:39:05,378 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:39:12,366 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 17188 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:39:12,369 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:39:12,370 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:39:13,877 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:39:13,879 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:39:13,987 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:39:14,184 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:39:14,242 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:39:14,358 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:39:14,446 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:39:14,707 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:39:14,722 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:39:15,226 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:39:16,174 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.167 seconds (JVM running for 4.57)
+2019-12-16 08:39:36,154 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:39:36,277 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] Post payload is { branchNumber='curlybranch', costCentre='curlycentre', fibreProjectManager='curlymanager', projectBudget='1000', projectCode='curlycode', projectType='curlytype', requestor='curly@curl', state='NSW'}
+2019-12-16 08:39:36,281 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] After processinng , new br is 
+2019-12-16 08:47:04,204 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:47:04,215 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:47:12,528 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 5440 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:47:12,531 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:47:12,532 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:47:14,015 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:47:14,018 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:47:14,135 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:47:14,313 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:47:14,371 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:47:14,478 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:47:14,565 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:47:14,814 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:47:14,831 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:47:15,341 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:47:16,308 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.171 seconds (JVM running for 4.596)
+2019-12-16 08:47:28,315 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:47:28,440 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] Post payload is { branchNumber='curlybranch', costCentre='curlycentre', fibreProjectManager='curlymanager', projectBudget='1000', projectCode='curlycode', projectType='curlytype', requestor='curly@curl', state='NSW'}
+2019-12-16 08:47:28,443 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] After processinng , new br is 
+2019-12-16 08:51:17,403 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 08:51:17,417 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2019-12-16 08:51:32,820 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on Pete-Desktop with PID 7672 (C:\Users\peter\Desktop\appforally\br2\budget-request-backend\target\classes started by peter in C:\Users\peter\Desktop\appforally\br2\budget-request-backend)
+2019-12-16 08:51:32,822 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 08:51:32,823 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2019-12-16 08:51:34,279 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-12-16 08:51:34,282 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 08:51:34,395 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-12-16 08:51:34,577 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 08:51:34,634 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 08:51:34,733 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 08:51:34,812 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-12-16 08:51:35,058 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-12-16 08:51:35,075 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-16 08:51:35,585 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 08:51:36,530 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 4.062 seconds (JVM running for 4.461)
+2019-12-16 08:51:46,078 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 08:51:46,199 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] Post payload is { branchNumber='curlybranch', costCentre='curlycentre', fibreProjectManager='curlymanager', projectBudget='1000', projectCode='curlycode', projectType='curlytype', requestor='curly@curl', state='NSW'}
+2019-12-16 08:51:46,203 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-1] After processinng , new br is 
+2019-12-16 08:51:57,808 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-8] Post payload is { branchNumber='branchybranch', costCentre='costcost', fibreProjectManager='fiberypee emm', projectBudget='1000', projectCode='projycode', projectType='projytype', requestor='someone@somedomain', state='VIC'}
+2019-12-16 08:51:57,811 DEBUG com.pete.budgetrequestbackend.controller.BudgetRequestController [http-nio-8080-exec-8] After processinng , new br is 
+2019-12-16 09:45:40,840 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2019-12-16 09:45:40,862 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
