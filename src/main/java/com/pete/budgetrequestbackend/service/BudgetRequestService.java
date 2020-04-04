@@ -1,7 +1,7 @@
 package com.pete.budgetrequestbackend.service;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
+
 
 import com.pete.budgetrequestbackend.model.BudgetRequest;
 import com.pete.budgetrequestbackend.payload.CreateBudgetRequestPayload;
@@ -33,10 +33,10 @@ public class BudgetRequestService{
     budgetRequest.setState(payload.getState());
     
     // these attribures are defined by bus logic , they are generated here rather than expected to be part of they payload
-    Date today = Calendar.getInstance().getTime();
-    budgetRequest.setAllocationDate(today); //TODO verify bus logic for this
-    budgetRequest.setFinYear(today); //TODO verify bus logic for this
-    budgetRequest.setCreatedDate(today);
+    LocalDate now = LocalDate.now();
+    budgetRequest.setAllocationDate(getStartOfMonthFromNow(now)); 
+    budgetRequest.setFinYear(getEndOfCurrentFinYearFromNow(now)); 
+    budgetRequest.setCreatedDate(now);
 
 
 
@@ -44,6 +44,21 @@ public class BudgetRequestService{
     return  ResponseEntity.status(HttpStatus.CREATED).body(budgetRequest);
     }
 
+    private LocalDate getEndOfCurrentFinYearFromNow(LocalDate now){
+        LocalDate endOfFinYearInThisCalendarYear = LocalDate.of(now.getYear() , 06, 30);
+        if (now.isBefore(endOfFinYearInThisCalendarYear)){
+            return endOfFinYearInThisCalendarYear;
+        }
+        else{
+            return LocalDate.of((endOfFinYearInThisCalendarYear.getYear()+1),endOfFinYearInThisCalendarYear.getMonthValue(), endOfFinYearInThisCalendarYear.getDayOfMonth());
+        }
+        
+    }
 
+    private LocalDate getStartOfMonthFromNow(LocalDate now){
+
+        return LocalDate.of(now.getYear(), now.getMonthValue() , 1);
+
+    }
 
 }

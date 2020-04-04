@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 
 @Entity
@@ -16,27 +17,28 @@ public class BudgetRequest implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @JsonFormat(pattern="dd/MM/yyyy")
-    private Date createdDate;
+    private LocalDate createdDate;
     private String projectCode;
     private String projectType;
     private Long projectBudget;
     private String costCentre;
     private String branchNumber;
     @JsonFormat(pattern="dd/MM/yyyy ")
-    private Date allocationDate;
+    private LocalDate allocationDate;
     @JsonFormat(pattern="dd/MM/yyyy ")
 
-    private Date finYear;
+    private LocalDate finYear;
     private String fibreProjectManager;
     private String state;
 
     private String requestor;
 
 
+
     public BudgetRequest() {
     }
 
-    public BudgetRequest(Long id, Date createdDate, String projectCode, String projectType, Long projectBudget, String costCentre, String branchNumber, Date allocationDate, Date finYear, String fibreProjectManager, String state, String requestor) {
+    public BudgetRequest(Long id, LocalDate createdDate, String projectCode, String projectType, Long projectBudget, String costCentre, String branchNumber, LocalDate allocationDate, LocalDate finYear, String fibreProjectManager, String state, String requestor) {
         this.id = id;
         this.createdDate = createdDate;
         this.projectCode = projectCode;
@@ -59,11 +61,11 @@ public class BudgetRequest implements Serializable{
         this.id = id;
     }
 
-    public Date getCreatedDate() {
+    public LocalDate getCreatedDate() {
         return this.createdDate;
     }
 
-    public void setCreatedDate(Date createdDate) {
+    public void setCreatedDate(LocalDate createdDate) {
         this.createdDate = createdDate;
     }
 
@@ -107,19 +109,19 @@ public class BudgetRequest implements Serializable{
         this.branchNumber = branchNumber;
     }
 
-    public Date getAllocationDate() {
+    public LocalDate getAllocationDate() {
         return this.allocationDate;
     }
 
-    public void setAllocationDate(Date allocationDate) {
+    public void setAllocationDate(LocalDate allocationDate) {
         this.allocationDate = allocationDate;
     }
 
-    public Date getFinYear() {
+    public LocalDate getFinYear() {
         return this.finYear;
     }
 
-    public void setFinYear(Date finYear) {
+    public void setFinYear(LocalDate finYear) {
         this.finYear = finYear;
     }
 
@@ -147,6 +149,67 @@ public class BudgetRequest implements Serializable{
         this.requestor = requestor;
     }
 
+    public BudgetRequest id(Long id) {
+        this.id = id;
+        return this;
+    }
+
+    public BudgetRequest createdDate(LocalDate createdDate) {
+        this.createdDate = createdDate;
+        return this;
+    }
+
+    public BudgetRequest projectCode(String projectCode) {
+        this.projectCode = projectCode;
+        return this;
+    }
+
+    public BudgetRequest projectType(String projectType) {
+        this.projectType = projectType;
+        return this;
+    }
+
+    public BudgetRequest projectBudget(Long projectBudget) {
+        this.projectBudget = projectBudget;
+        return this;
+    }
+
+    public BudgetRequest costCentre(String costCentre) {
+        this.costCentre = costCentre;
+        return this;
+    }
+
+    public BudgetRequest branchNumber(String branchNumber) {
+        this.branchNumber = branchNumber;
+        return this;
+    }
+
+    public BudgetRequest allocationDate(LocalDate allocationDate) {
+        this.allocationDate = allocationDate;
+        return this;
+    }
+
+    public BudgetRequest finYear(LocalDate finYear) {
+        this.finYear = finYear;
+        return this;
+    }
+
+    public BudgetRequest fibreProjectManager(String fibreProjectManager) {
+        this.fibreProjectManager = fibreProjectManager;
+        return this;
+    }
+
+    public BudgetRequest state(String state) {
+        this.state = state;
+        return this;
+    }
+
+    public BudgetRequest requestor(String requestor) {
+        this.requestor = requestor;
+        return this;
+    }
+
+
 
     @Override
     public String toString() {
@@ -165,4 +228,6 @@ public class BudgetRequest implements Serializable{
             ", requestor='" + getRequestor() + "'" +
             "}";
     }
+ 
+
 }    
