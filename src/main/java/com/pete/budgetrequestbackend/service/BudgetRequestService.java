@@ -46,7 +46,7 @@ public class BudgetRequestService{
 
     private LocalDate getEndOfCurrentFinYearFromNow(LocalDate now){
         LocalDate endOfFinYearInThisCalendarYear = LocalDate.of(now.getYear() , 06, 30);
-        if (now.isBefore(endOfFinYearInThisCalendarYear)){
+        if (now.isBefore(endOfFinYearInThisCalendarYear) || now.isEqual(endOfFinYearInThisCalendarYear)){
             return endOfFinYearInThisCalendarYear;
         }
         else{
