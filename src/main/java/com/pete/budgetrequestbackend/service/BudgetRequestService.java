@@ -27,6 +27,8 @@ public class BudgetRequestService{
     budgetRequest.setBranchNumber(payload.getBranchNumber());
     budgetRequest.setCostCentre(payload.getCostCentre());
     budgetRequest.setFibreProjectManager(payload.getFibreProjectManager());
+    budgetRequest.setProjectCode(payload.getProjectCode());
+    budgetRequest.setProjectType(payload.getProjectType());
     budgetRequest.setProjectBudget(payload.getProjectBudget());
     budgetRequest.setProjectBudget(payload.getProjectBudget());
     budgetRequest.setRequestor(payload.getRequestor());
