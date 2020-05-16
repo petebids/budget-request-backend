@@ -2,10 +2,10 @@ package com.pete.budgetrequestbackend.service;
 
 import java.time.LocalDate;
 
-
 import com.pete.budgetrequestbackend.model.BudgetRequest;
 import com.pete.budgetrequestbackend.payload.CreateBudgetRequestPayload;
 import com.pete.budgetrequestbackend.repository.BudgetRequestRepository;
+import com.pete.budgetrequestbackend.util.DateUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +17,9 @@ public class BudgetRequestService{
 
     @Autowired
     BudgetRequestRepository budgetRequestRepository ;
+
+    @Autowired
+    DateUtil dateUtil; 
 
 
 
@@ -36,8 +39,8 @@ public class BudgetRequestService{
     
     // these attribures are defined by bus logic , they are generated here rather than expected to be part of they payload
     LocalDate now = LocalDate.now();
-    budgetRequest.setAllocationDate(getStartOfMonthFromNow(now)); 
-    budgetRequest.setFinYear(getEndOfCurrentFinYearFromNow(now)); 
+    budgetRequest.setAllocationDate(dateUtil.getStartOfMonthFromNow(now)); 
+    budgetRequest.setFinYear(dateUtil.getEndOfCurrentFinYearFromNow(now)); 
     budgetRequest.setCreatedDate(now);
 
 
@@ -46,21 +49,5 @@ public class BudgetRequestService{
     return  ResponseEntity.status(HttpStatus.CREATED).body(budgetRequest);
     }
 
-    private LocalDate getEndOfCurrentFinYearFromNow(LocalDate now){
-        LocalDate endOfFinYearInThisCalendarYear = LocalDate.of(now.getYear() , 06, 30);
-        if (now.isBefore(endOfFinYearInThisCalendarYear) || now.isEqual(endOfFinYearInThisCalendarYear)){
-            return endOfFinYearInThisCalendarYear;
-        }
-        else{
-            return LocalDate.of((endOfFinYearInThisCalendarYear.getYear()+1),endOfFinYearInThisCalendarYear.getMonthValue(), endOfFinYearInThisCalendarYear.getDayOfMonth());
-        }
-        
-    }
-
-    private LocalDate getStartOfMonthFromNow(LocalDate now){
-
-        return LocalDate.of(now.getYear(), now.getMonthValue() , 1);
-
-    }
 
 }
