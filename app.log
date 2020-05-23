@@ -12,3 +12,48 @@
 2020-05-16 13:09:56,257 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2020-05-16 13:09:56,274 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
 2020-05-16 13:09:56,284 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-17 13:02:45,473 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] Starting DemoApplicationTests on pete-VirtualBox with PID 12625 (started by pete in /home/pete/budgetrequests/budget-request-backend)
+2020-05-17 13:02:45,491 DEBUG com.pete.budgetrequestbackend.DemoApplicationTests [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-05-17 13:02:45,495 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-05-17 13:02:57,906 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-17 13:02:58,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-17 13:02:59,133 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-17 13:02:59,698 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2020-05-17 13:03:00,391 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-17 13:03:00,964 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-17 13:03:03,356 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-17 13:03:09,323 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] Started DemoApplicationTests in 24.855 seconds (JVM running for 31.907)
+2020-05-17 13:03:10,616 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-17 13:03:10,719 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-17 13:03:10,761 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-17 13:05:41,056 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Starting BudgetRequestApplication on pete-VirtualBox with PID 12820 (/home/pete/budgetrequests/budget-request-backend/target/classes started by pete in /home/pete/budgetrequests/budget-request-backend)
+2020-05-17 13:05:41,061 DEBUG com.pete.budgetrequestbackend.BudgetRequestApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-05-17 13:05:41,063 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] No active profile set, falling back to default profiles: default
+2020-05-17 13:05:43,696 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-05-17 13:05:43,701 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-05-17 13:05:43,850 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2020-05-17 13:05:44,160 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-17 13:05:44,261 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-17 13:05:44,344 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-17 13:05:44,449 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2020-05-17 13:05:44,569 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-17 13:05:44,676 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-17 13:05:45,482 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-17 13:05:47,066 INFO com.pete.budgetrequestbackend.BudgetRequestApplication [main] Started BudgetRequestApplication in 6.745 seconds (JVM running for 7.448)
+2020-05-17 13:05:51,875 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-17 13:05:51,914 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-17 13:05:51,922 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-17 13:14:37,087 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] Starting DemoApplicationTests on pete-VirtualBox with PID 15255 (started by pete in /home/pete/budgetrequests/budget-request-backend)
+2020-05-17 13:14:37,095 DEBUG com.pete.budgetrequestbackend.DemoApplicationTests [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-05-17 13:14:37,123 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-05-17 13:14:41,917 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-17 13:14:42,322 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-17 13:14:42,599 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-17 13:14:42,910 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.9.Final}
+2020-05-17 13:14:43,273 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-17 13:14:43,588 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-17 13:14:45,329 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-17 13:14:48,785 INFO com.pete.budgetrequestbackend.DemoApplicationTests [main] Started DemoApplicationTests in 12.609 seconds (JVM running for 16.697)
+2020-05-17 13:14:49,523 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-17 13:14:49,615 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-17 13:14:49,674 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
