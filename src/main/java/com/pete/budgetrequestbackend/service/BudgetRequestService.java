@@ -1,6 +1,9 @@
 package com.pete.budgetrequestbackend.service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import com.pete.budgetrequestbackend.model.BudgetRequest;
 import com.pete.budgetrequestbackend.payload.CreateBudgetRequestPayload;
@@ -8,9 +11,12 @@ import com.pete.budgetrequestbackend.repository.BudgetRequestRepository;
 import com.pete.budgetrequestbackend.util.DateUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class BudgetRequestService{
@@ -21,6 +27,38 @@ public class BudgetRequestService{
     @Autowired
     DateUtil dateUtil; 
 
+    @Value("$budgetrequests.alowable-query-params")
+    List<String> allowableQueryParams;
+
+
+    public ResponseEntity<BudgetRequest> getByID(Long id){
+        BudgetRequest budgetRequest = budgetRequestRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
+        return ResponseEntity.status(HttpStatus.OK).body(budgetRequest);
+    }
+
+    public ResponseEntity<List<BudgetRequest>> getAll(Map<String, String> requestParams){
+        if (requestParams.size() ==0){
+            List<BudgetRequest> budgetRequests = new ArrayList<BudgetRequest>();
+            budgetRequestRepository.findAll().forEach(budgetRequests::add);
+            if (budgetRequests.isEmpty()){
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND) ; 
+            }
+            return ResponseEntity.status(HttpStatus.OK).body(budgetRequests);
+        }
+        else{
+            for (String param : requestParams.keySet()) {
+                if (!allowableQueryParams.contains(param)){
+                    throw new ResponseStatusException(HttpStatus.BAD_REQUEST , "query param not supported ");
+                }
+            }
+            List<BudgetRequest> budgetRequests = new ArrayList<BudgetRequest>();
+            //BudgetRequest budgetRequest = new BudgetRequest();
+            // hack for now to test other paths 
+            return ResponseEntity.status(HttpStatus.OK).body(budgetRequests);
+
+        }
+
+    }
 
 
     public ResponseEntity<BudgetRequest> createBudgetRequest(CreateBudgetRequestPayload payload){        

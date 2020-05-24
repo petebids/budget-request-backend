@@ -45,8 +45,8 @@ public class BudgetRequestController{
     }
 
     @GetMapping("/budgetrequest/{id}")
-    public Optional<BudgetRequest> getbyId(@PathVariable(value = "id") final Long budgetRequestId){
-        return budgetRequestRepository.findById(budgetRequestId);
+    public ResponseEntity<BudgetRequest> getbyId(@PathVariable(value = "id") final Long budgetRequestId){
+        return budgetRequestService.getByID(budgetRequestId);
         
     }
 
