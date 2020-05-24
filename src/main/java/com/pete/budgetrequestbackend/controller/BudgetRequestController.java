@@ -7,6 +7,8 @@ import com.pete.budgetrequestbackend.payload.CreateBudgetRequestPayload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import javax.validation.Valid;
@@ -25,6 +27,7 @@ import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @CrossOrigin(maxAge = 3600)
 @RestController
@@ -39,9 +42,13 @@ public class BudgetRequestController{
     BudgetRequestService budgetRequestService;
 
 
+    @GetMapping("/budgetrequest")
+    public ResponseEntity<List<BudgetRequest>> getAllByParam(@RequestParam Map<String, String> requestParams){
+        return budgetRequestService.getAllByParams(requestParams);
+    }
     @GetMapping("/budgetrequest/")
-    public Iterable<BudgetRequest> getAll(){
-        return budgetRequestRepository.findAll();
+    public ResponseEntity<List<BudgetRequest>> getAll(){
+        return budgetRequestService.findAll();
     }
 
     @GetMapping("/budgetrequest/{id}")
@@ -65,7 +72,7 @@ public class BudgetRequestController{
     @DeleteMapping("/budgetrequest/{id}")
     public ResponseEntity<String> deleteBudgetrequest(@PathVariable(value = "id") final Long budgetRequestId){
         budgetRequestRepository.deleteById(budgetRequestId);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Sucessfully deleted budget request by id : " + budgetRequestId);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 
 
