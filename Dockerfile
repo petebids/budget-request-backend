@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11
 VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY /target/budget-request-backend-0.0.1-SNAPSHOT.jar app.jar
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java", "-jar", "app.jar"]

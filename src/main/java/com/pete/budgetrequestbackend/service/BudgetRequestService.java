@@ -29,7 +29,7 @@ public class BudgetRequestService{
     DateUtil dateUtil; 
 
     @Value("$budgetrequests.alowable-query-params")
-    final List<String> allowableQueryParams;
+    List<String> allowableQueryParams;
 
 
     public ResponseEntity<BudgetRequest> getByID(Long id){
